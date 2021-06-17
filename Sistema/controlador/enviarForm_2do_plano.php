@@ -7,7 +7,7 @@ include_once "../modelo/pdo.php";
 	$trim = $_SERVER['argv'][1];
 	$fecha = $_SERVER['argv'][2];
 
-	$recuperar_correos = $pdo->prepare("SELECT * FROM profesor WHERE noEconomico = 54321");
+	$recuperar_correos = $pdo->prepare("SELECT * FROM profesor");
 	$recuperar_correos->execute();
 	//$correos = $recuperar_correos->fetch(PDO::FETCH_ASSOC);
 
