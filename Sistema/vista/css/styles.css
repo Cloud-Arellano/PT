@@ -1,0 +1,427 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #BD1E1E;  /*#2E4052; azul */
+	/*background-color: #990D35; segundo*/
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- LOGIN ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+#usuario {
+	text-align: center;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- HEADER ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+#header-nav{
+	background-color: #fefffe;
+	border: 0;
+	border-radius: 0;
+}
+
+#logo {
+	background: url('../images/logo_UAM_1.jpg') no-repeat;
+	width: 600px;
+	height: 75px;
+	margin-left: 15%;
+}
+
+#nombre { /*Sistema de asignación...*/
+	font-size: 122%;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 0;
+}
+
+#encabezado{
+	margin: 0;
+}
+
+#main-menu {
+	padding: 45px 0 0 0;
+}
+
+/******Log In (login-php) *******/
+ #correo, #passw, #inicio-sesion {
+	text-align: center;
+}
+
+form > p {	/*También afecta a los formularios de docentes.php*/
+	text-align: center;
+}
+
+#menu {
+	background-color: #F5E2C8;
+}
+
+#login {
+	padding-top: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- FORM DOCENTE ------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+#contenedor-docente {
+	padding-top: 25px;
+	padding-left: 9%;
+	padding-right: 2%;
+}
+#docentes {
+	width: 90%;
+	background-color: #F5E2C8;
+}
+.container_label{
+	padding: 3px;
+	font-size: 0.9em;
+}
+#horarios {
+	border: 1.5px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+	background-color: #F9C382;
+	border-color: #0000;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+input[type=number] {
+  width: 110px;
+}
+#noGrup, #noEcon, #email {
+	width: 240px;
+}
+.container_submit{
+	padding: 7px;
+	font-size: 1.1em;
+	background-color: #F9C382;
+	border: 1.5px solid black;
+	border-radius: 10px;
+}
+select{
+	padding: 3px;
+	width: 50%;
+	font-size: 1em;
+}
+.container_submit:hover {
+	box-shadow: 1px 1px 2px 1px #490E12;
+}
+#resp-warning {
+	color: red;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- MENÚ PRINCIPAL ----------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+#bienvenido {
+	color: #fff;
+	text-shadow: 1px 1px 1px #220;
+}
+#datos-tile, #prog-tile {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+#datos-tile:hover, #prog-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#datos-tile {
+	background: url('../images/campus1_300.jpg') no-repeat;
+	background-position: center;
+}
+#prog-tile {
+	background: url('../images/campus2_300.jpg') no-repeat;
+	background-position: center;
+}
+#datos-tile span, #prog-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- PROGRAMACION.PHP --------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+#fisica-tile,#mate-tile,#quimica-tile,#tronco-tile,#admin-tile,#dere-tile,#econ-tile {
+	height: 60px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	background-color: #F5E2C8;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	font-size: 120%;
+	text-transform: uppercase;
+	color: #000;
+}
+#fisica-tile:hover, #mate-tile:hover, #quimica-tile:hover, #tronco-tile:hover,
+#admin-tile:hover, #dere-tile:hover, #econ-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-cbi, #menu-desc {
+	width: 100%;
+	height: 1.4em;
+	color: #fff;
+	text-shadow: 2px 1px 1px #220;
+	margin-top: 10px;
+}
+.prog {
+	color: #fff;
+	text-shadow: 2px 1px 1px #220;
+	text-align: left;
+	padding-left: 30px;
+}
+.prog-uea {
+	width: 100%;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+.docentes {
+	color: #ffff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #220;
+	font-size: 1.2em;
+}
+.exportar {
+	color: black;
+	text-decoration: none;
+	border-radius: 2px;
+	padding: 10px 30px 10px 30px;
+	border: 1px solid black;
+	background-color: #F5E2C8;
+	text-transform: uppercase;
+	font-size: 120%;
+}
+.exportar:hover {
+	text-decoration: none;
+	box-shadow: 0 1px 5px 1px #cccccc;
+	color: black;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------ DATOS.PHP (PREPARAR BD) ----------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+.titles {  /******* También se utiliza en los títulos de los menús de cada UEA******/
+	width: 100%;
+	height: 1.4em;
+	color: #fff;
+	text-shadow: 2px 1px 1px #220;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#carga, #envio {
+	margin-bottom: 10px;
+}
+.card {
+	min-height: 100%;
+}
+#import-file, #update-uea, #update-docentes { 
+	padding: 2px;
+	font-size: 95%;
+}
+#trimestre {
+	text-align: left;
+}
+#nuevo-trim {
+	margin-left: 13px;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+#enviar-form {
+	padding-top: 10px;
+}
+#img_cat_uea,#img_cat_prof,#img_plan {
+	color: blue;
+	text-decoration: underline;
+}
+#img_cat_uea:hover,#img_cat_prof:hover,#img_plan:hover {
+  background-color: lightblue;
+  cursor: help;
+}
+#fecha-trim {
+	text-align: left;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------- UEA (QUÍMICA, FÍSICA, MATE, TRONCO) -------------------- */
+/* ------------------------------------------------------------------------------------------ */
+.ueaSelect {
+	width: 100%;
+}
+.volver {
+	position: absolute;
+	right: 10px;
+	top: 110px;
+	background-color: #F5E2C8;
+	border: 1.5px solid black;
+	border-radius: 10px;
+}
+#hor-qui {
+	/*border: 1.5px solid black;*/
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.div-grupo {
+	border: 0.5px solid black;
+	height: 100%;
+	min-height: 3em;
+}
+.div-grupo.hover {
+	background-color: #390B02;
+}
+.div-prior {
+	border: 0.5px solid black;
+	margin: 2px;
+	font-size: 0.7em;
+}
+.div-prior-Uno {
+	background-color: #3AD13A;
+	font-size: 0.88em;
+	font-weight: bold;
+	padding: 1px;
+}
+.div-prior-Dos {
+	background-color: #06BC06;
+	font-size: 0.88em;
+	font-weight: bold;
+	padding: 1px;
+}
+.div-prior-tres {
+	background-color: #C6C906;
+	font-size: 0.88em;
+	font-weight: bold;
+	padding: 1px;
+}
+.div-prior-cuatro {
+	background-color: #F1512A;
+	font-size: 0.88em;
+	font-weight: bold;
+	padding: 1px;
+}
+.td-espacio {
+	width: 170px;
+}
+.td-horario {
+	padding: 6px;
+	background-color: #F5E2C8;
+	border-bottom: 1.5px solid black;
+}
+.td-docentes {
+	border-bottom: 1.5px solid #F5E2C8;
+	min-width: 2em;
+}
+.btn-guardar {
+	padding: 10px 20px 10px 20px;
+	font-size: 1.1em;
+	font-weight: bold;
+	border: 1.5px solid black;
+	background-color: #F5E2C8;
+}
+.btn-guardar:hover {
+	box-shadow: 2px 2px 3px 2px #490E12;
+}
+.alinear {
+	width: 30%;
+	justify-content: center;
+	aling-items: center
+}
+.div_doc {
+	height: 200%;
+	min-height: 4em;
+	padding: 6px 4px 6px 4px;
+}
+.div_doc.hover {
+	background-color: #F5E2C8;
+}
+.doc-interesados {
+	color: #fff;
+	text-shadow: 1px 1px 1px #220;
+}
+.doc-interesados:hover {
+	color: #000;
+}
+#doc-interesados {
+	font-size: 0.9rem;
+	background-color: #F5E2C8;
+}
+#doc-interesados th {
+	text-align: center;
+}
+.prioridad {
+	color: #fff;
+	text-shadow: 1px 2px 1px #220;
+}
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- MEDIA QUERIES ------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+/****** Dispositivos grandes ******/
+@media (min-width: 1200px){
+	#encabezado {
+		width: 60%;
+	}
+}
+/****** Dispositivos medianos ******/
+@media (min-width: 992px) and (max-width: 1199px){
+	#encabezado {
+		width: 65%;
+	}
+}
+
+/****** Dispositivos pequeños ******/
+@media (min-width: 768px) and (max-width: 991px){
+	#encabezado {
+		width: 45%;
+	}
+	#nombre {
+		padding-right: 25px;
+	}
+	#hora-semana { /*** para la tabla de horarios en docentes.php ****/
+		overflow: auto;
+	}
+}
+
+/****** Dispositivos extra pequeños ******/
+@media (max-width: 767px){
+	#logo {
+		background-position: left;
+		margin-left: 0;
+	}
+	#nombre{
+		padding-left: 15px;
+		width: 100%;
+	}
+	#encabezado {
+		width: 83%;
+		margin-left: auto;
+	}
+	#header-logo {
+		width: 90%;
+	}
+	#contenedor-docente { /*** para docentes.php ****/
+		padding-top: 25px;
+		padding-left: 6%;
+		padding-right: 0%;
+	}
+	#hora-semana { /*** para docentes.php ****/
+		overflow: auto;
+	}
+	#main-menu { /***  Para menu.php ****/
+		width: 80%;
+	}
+	.volver {
+		top: 170px;
+	}
+}
